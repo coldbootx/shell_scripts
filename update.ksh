@@ -7,7 +7,7 @@
 ###############################################################################################
 
 function usagemsg_displaymsg {
-  print -e "
+  print "
 Program: update
 Author: William Butler (william_butler76@yahoo.com)
 License: GNU GPL (version 3, or any later version).
