@@ -1,4 +1,4 @@
-#!/usr/bin/ksh
+#!/usr/bin/ksh93
 ###############################################################################################
 #### A simple debian base full system update script.
 #### This will fix any broke or missing dependencies, update package list, upgrade packages,
@@ -6,10 +6,10 @@
 #### This program needs to be ran as sudo after script is complete it drops sudo privileges!
 ###############################################################################################
 
-function usagemsg_displaymsg {
+function displaymsg {
   print "
 Program: update
-Author: William Butler (william_butler76@yahoo.com)
+Author: William Butler
 License: GNU GPL (version 3, or any later version).
 "
 }
@@ -29,8 +29,10 @@ function drop_sudo {
 }
 
 update
+
 drop_sudo
-usagemsg_displaymsg
+
+displaymsg
 
 # Exit
 exit ${?}
