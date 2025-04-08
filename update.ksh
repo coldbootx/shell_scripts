@@ -6,14 +6,20 @@
 #### This program needs to be ran as sudo after script is complete it drops sudo privileges!
 ###############################################################################################
 
+###############################################################################################
+#### Display Message
 function displaymsg {
   print "
-Program: update
-Author: William Butler
+Program: update.ksh
+Date: 04/25/2020
+Version: 1.2
+Author: coldboot AKA: William Butler (coldboot@yahoo.com)
 License: GNU GPL (version 3, or any later version).
 "
 }
 
+###############################################################################################
+#### Full System Updat and Clean Up
 function update {
   apt-get install -f
   apt-get update -y
@@ -24,15 +30,18 @@ function update {
   apt-get clean
 }
 
+###############################################################################################
+#### Drop Sudo
 function drop_sudo {
 	sudo -k
 }
 
+###############################################################################################
+#### Run Functions
 update
-
 drop_sudo
-
 displaymsg
 
-# Exit
+###############################################################################################
+#### Exit
 exit ${?}
