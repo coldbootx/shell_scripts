@@ -39,7 +39,6 @@ function config_ufw {
     ufw allow out on $iface to 1.0.0.1 proto udp port 853
     ufw allow out on $iface to any proto tcp port 21
     ufw allow out on $iface to any proto tcp port 22
-    ufw allow out on $iface to any proto tcp port 2222
     ufw allow out on $iface to any proto tcp port 80
     ufw allow out on $iface to any proto tcp port 443
     ufw reload
