@@ -1,3 +1,4 @@
+################################################################
 A colections of shell scripts written by me to share!
 
 ################################################################
@@ -7,6 +8,6 @@ I take NO responsibility for your actions!
 ################################################################
 
 ################################################################
-Author: Coldboot AKA: William Butler (coldboot@yahoo.com)
+Author: William Butler (coldboot@yahoo.com)
 License: GNU GPL (version 3, or any later version).
 ################################################################
