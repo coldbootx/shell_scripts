@@ -51,7 +51,7 @@ function displaymsg {
   print "
 Program: ufw_config.ksh
 Date: 05/12/2025
-Author: William Butler (coldboot@yahoo.com)
+Author: William Butler coldboot@yahoo.com
 License: GNU GPL (version 3, or any later version).
 "
 }
