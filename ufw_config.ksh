@@ -21,8 +21,10 @@
 # set -x
 
 ################################################################
-#### Get interface 
+#### Get interface set dns
 iface=$(ip route get 1.1.1.1 | awk -- '{printf $5}')
+dns1="1.1.1.1"
+dns2="1.0.0.1"
 
 ################################################################
 #### Config ufw to allow dns, ftp, ssh, http, and https.
@@ -33,10 +35,10 @@ function config_ufw {
     ufw default deny incoming
     ufw default deny forward
     ufw default deny outgoing
-    ufw allow out on $iface to 1.1.1.1 proto udp port 53
-    ufw allow out on $iface to 1.0.0.1 proto udp port 53
-    ufw allow out on $iface to 1.1.1.1 proto udp port 853
-    ufw allow out on $iface to 1.0.0.1 proto udp port 853
+    ufw allow out on $iface to $dns1 proto udp port 53
+    ufw allow out on $iface to $dns2 proto udp port 53
+    ufw allow out on $iface to $dns1 proto udp port 853
+    ufw allow out on $iface to $dns2 proto udp port 853
     ufw allow out on $iface to any proto tcp port 21
     ufw allow out on $iface to any proto tcp port 22
     ufw allow out on $iface to any proto tcp port 80
