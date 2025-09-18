@@ -13,8 +13,8 @@ function displaymsg {
 Program: update.ksh
 Date: 04/25/2020
 Version: 1.2
-Author: William Butler coldboot@yahoo.com
-License: GNU GPL (version 3, or any later version).
+Author: William Butler (coldboot@mailfence.com)
+License: MIT License.
 "
 }
 
