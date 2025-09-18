@@ -1,4 +1,4 @@
-A colections of shell scripts written by me to share!
+A colections of shell scripts written by me.
 
 Author: William Butler (coldboot@mailfence.com)
 
