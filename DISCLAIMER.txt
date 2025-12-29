@@ -3,11 +3,15 @@ OpenBSD Security Testing scripts
 
 Description
 -----------
-A professional security assessment tool designed for OpenBSD systems that tests password strength across multiple network services. This tool helps security professionals and system administrators identify weak passwords in controlled environments.
+
+Security assessment scripts are designed for OpenBSD systems that tests password strength across multiple network services.
+This tool helps security professionals and system administrators identify weak passwords in controlled environments.
 
 LEGAL DISCLAIMER
 -------------------
+
 - This tool is for EDUCATIONAL and AUTHORIZED SECURITY TESTING ONLY
 - Only use on systems you OWN or have EXPLICIT WRITTEN PERMISSION to test
 - Unauthorized use may violate local, state, and federal laws
-- The author is not responsible for misuse of this tool
+
+- The author is not responsible for misuse of these scripts!
